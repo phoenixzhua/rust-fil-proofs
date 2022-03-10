@@ -512,6 +512,7 @@ pub fn generate_empty_sector_update_proof_with_vanilla<
         &public_inputs,
         vanilla_proofs,
         &groth_params,
+        false,
     )?;
 
     info!("generate_empty_sector_update_proof_with_vanilla:finish");
@@ -579,6 +580,7 @@ pub fn generate_empty_sector_update_proof<Tree: 'static + MerkleTreeTrait<Hasher
         &public_inputs,
         &private_inputs,
         &groth_params,
+        false,
     )?;
 
     info!("generate_empty_sector_update_proof:finish");
